@@ -16,14 +16,14 @@ void fillArray (char fill, char chArray[], unsigned int start, unsigned int end)
 
 int main() 
 { 
-	unsigned int width = 0;
+   unsigned int width = 0;
 	
-	// validate
-	cout << "Enter width of diamond: ";
-	cin >> width;
+   // validate
+   cout << "Enter width of diamond: ";
+   cin >> width;
    if(width > max_width) {
-      cout << "Error! Max width is " << max_width << ". Exiting." << endl;
-      return 1;
+   cout << "Error! Max width is " << max_width << ". Exiting." << endl;
+   return 1;
    }
    
    char diamond[width][width];
@@ -59,11 +59,11 @@ int main()
       }
    }
 
-	for(int i = 0; i < width; i++) {
-	   printArray(diamond[i], width);
-	   cout << endl;
-	}
-	return 0; 
+   for(int i = 0; i < width; i++) {
+      printArray(diamond[i], width);
+      cout << endl;
+   }
+   return 0; 
 }
  
 void printArray (const char chArray[], const unsigned int width) {
