@@ -73,9 +73,7 @@ void printArray (const char chArray[], const unsigned int width) {
 }
 
 void fillArray (char fill, char chArray[], unsigned int width) {
-   for(int i = 0; i < width; i++) {
-      chArray[i] = fill;   
-   }
+   fillArray(fill, chArray, 0, width);
 }
 
 void fillArray (char fill, char chArray[], unsigned int start, unsigned int end) {
